@@ -1,0 +1,791 @@
+			body{
+			
+				margin: 0px;
+				font-family: arial;
+				}
+			#mainarea{
+				width: 100%;
+				height:100%;
+				background: #fff;
+				float: left;
+			}
+			.inner{
+				width: 1200px;
+				height: 100%;
+				margin: 0px auto;
+			}
+			#toparea{
+				width: 100%;
+				height: 78px;
+				background: #fff;
+				float: left;
+				position: sticky;
+				top: 0;
+				z-index: 1000;
+			}
+			#logo{
+				width: 150px;
+				height: 78px;
+				float: left;
+			}
+			#logo img{
+				width: 135px;
+				height: 50px;
+				margin: 19px 10px; 
+				padding-right: 12px;
+				border-right: solid 1px #e2e2e7;
+			}
+			#location_logo{
+				width: 40px;
+				height: 78px;
+				float: left;
+			}
+			#location_logo img{
+				width: 25px;
+				height: 25px;
+				margin: 30px 0px 0px 11px;
+			}
+			#search_location{
+				width: 400px;
+				height: 78px;
+				float:left;
+			}
+			#search_location p{
+				width: 350px;
+				height: 50px;
+				font-size: 17px;
+				font-weight: 550;
+				/*text-decoration: capitalize;*/
+				color: #414449;
+				margin: 35px 25px 28px 0px;
+			}
+			#to_search{
+				width: 400px;
+				height: 78px;
+				float: left;
+				/* background: yellow; */
+
+			}
+			#to_search input{
+				height: 60px;
+				width: 380px;
+				margin: 9px 0 0 0;
+				padding-left: 10px;
+				background: #f0f0f5;
+				border: none;
+				border-radius: 10px;
+			}
+			#top_profile{
+				width: 200px;
+				height: 78px;
+				float: left;
+			}
+			#top_profile img{
+				width: 60px;
+				height: 60px;
+				margin: 9px 0 0 60px;
+			}
+			#frontarea{
+				width: 100%;
+				height: 315px;
+				float: left;
+				border-top: solid 2px #e2e2e7;
+				background: linear-gradient(to top, #cabdf4, #FFF);
+				border-radius: 0 0 25px 25px;
+			}
+			#front_text{
+				height: 315px;
+				width: 50%;
+				float: left;
+				
+			}
+			#front_text p{
+				font-family: verdana;
+				font-weight: 600;
+				font-size:40px;
+				color: #3d3f48;
+				margin: 110px 0 0 20px;
+			}
+			#front_image{
+				height: 315px;
+				width: 50%;
+				float: left;
+			}
+			#front_image img{
+				width: 460px;
+				height: 260px;
+    			margin: 60px 0px 0px 150px;
+			}
+			#food_resturant_area{
+				width: 1000px;
+				height: auto;
+				float:left;
+				margin: 0 8.33%;
+			}
+			#category_area{
+				width: 1000px;
+				height: 305px;
+				float:left;
+				border-bottom: solid 1px #e2e2e7;
+			}
+			#category_head{
+				float: left;
+				height: 72px;
+				width: 1000px;
+			}
+			#category_title{
+				height: 72px;
+				width: 700px;
+				float: left;
+			}
+			#viewmore_category{
+				/*height: 34px;
+				width:200px;*/
+				height:44px;
+				width:300px;
+				float: left;
+				padding-top: 28px;
+			}
+			#viewmore_category a{
+				margin-left: 150px;
+				padding: 10px 20px;
+				border-radius: 10px;
+				text-decoration: none;
+				background:#fffaae;
+				color:#f36a1d;
+				font-size: 12px;
+				word-spacing: 3px;
+				letter-spacing: 2px;
+				font-weight: 600;
+				font-family: verdana;
+				text-transform: uppercase;
+				transition-duration: 0.3s;
+				transition-timing-function: ease-in-out;
+			}
+			#viewmore_category a:hover{
+				color: #fffaae;
+				background:#f36a1d;
+			}
+			#category_items{
+				width: 1000px;
+				height: 233px;
+				/*padding-bottom:30px;*/
+				float:left;
+			}
+			.item_container{
+				width: 150px;
+				height:190px;
+				margin:20px 8px 20px 8px;
+				float: left;
+				overflow: hidden;
+			}
+			.item_container img{
+				width: 130px;
+				height: 160px;
+				/*width: 100%;
+				height: 100%;*/
+				margin: 5px 11px;
+				transition: transform 0.3s ease-in-out; 
+			}
+			.item_container img:hover{
+				transform: scale(1.05, 1.05);
+			}
+			#best_outlet_area{
+				width: 1000px;
+				height: 750px;
+				float:left;
+				border-bottom: solid 1px #e2e2e7;
+			}
+			#outlet_head{
+				float: left;
+				height: 72px;
+				width: 1000px;
+			}
+			#outlet_title{
+				height: 72px;
+				width: 700px;
+				float: left;
+			}
+			#viewmore_outlet{
+				/*height: 34px;
+				width:200px;*/
+				height:44px;
+				width:300px;
+				float: left;
+				padding-top: 28px;
+			}
+			#viewmore_outlet a{
+				margin-left: 150px;
+				padding: 10px 20px;
+				border-radius: 10px;
+				text-decoration: none;
+				background:#fffaae;
+				color:#f36a1d;
+				font-size: 12px;
+				word-spacing: 3px;
+				letter-spacing: 2px;
+				font-weight: 600;
+				font-family: verdana;
+				text-transform: uppercase;
+				transition-duration: 0.3s;
+				transition-timing-function: ease-in-out;
+			}
+			#viewmore_outlet a:hover{
+				color: #fffaae;
+				background:#f36a1d;
+			}
+			.outlet_container{
+				width: 320px;
+				height: 320px;
+				float: left;
+				margin: 6px;
+			}
+			.outlet_container a{
+				text-decoration: none;
+			}
+			.outlet_item{
+				width: 310px;
+				height: 310px;
+				margin:auto;
+				transition: transform 0.1s ease-in-out;
+			}
+			.outlet_image{
+				width: 310px;
+				height: 210px;
+				overflow: hidden;
+				
+				border-radius: 20px;
+			}
+			#o_img1{
+				background: url('assets/Outlets/Ram Babu Restaurant.avif');
+			}
+			#o_img2{
+				background: url('assets/Outlets/Sujata Family Restaurant.avif');
+			}
+			#o_img3{
+				background: url('assets/Outlets/New Pal Hotel.avif');
+			}
+			#o_img4{
+				background: url('assets/Outlets/0612 Road Chef.avif');
+			}
+			#o_img5{
+				background: url('assets/Outlets/Well Food.avif');
+			}
+			#o_img6{
+				background: url('assets/Outlets/Swad Restaurant.avif');
+			}
+			#o_img1,#o_img2,#o_img3,#o_img4,#o_img5,#o_img6{
+				
+				background-size: 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			.outletImg_vaccant_space{
+				height:130px;
+				width: 310px;
+			}
+			#outlet_1{
+				height: 80px;
+				width: 310px;
+				background-image: linear-gradient(to top, black 0%, black 35%,transparent 100%);
+			}
+			#outlet_1 p{
+				padding-left:14px;
+				padding-top: 30px;
+				font-weight: bolder;
+				color: #FFF;
+				font-size: 20px;
+				font-family: helvetica;
+			}
+			.outlet_name{
+				height: 25px;
+				width: 310px;
+			}
+			.outlet_name p{
+				margin: 0px;
+				padding: 4px 0px 0px 0px;
+				color: #292b2d;
+				font-weight: 700;
+				
+			}
+			.outlet_rating{
+				height: 25px;
+				width: 310px;
+			}
+			.outlet_rating p{
+				color: #292b2d;
+				margin: 0px;
+				margin-top: -18px;
+				margin-bottom: 0px;
+				margin-left: 25px;
+				margin-right: 0px;
+				padding: 0px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				padding-left: 0px;
+				padding-right: 0px;
+				font-weight: 600;
+			}
+			.outlet_rating svg{
+				width: 20px;
+				height: 20px;
+				margin: 0px;
+				margin-top: 2.5px;
+				margin-bottom: 0px;
+				margin-left: 0px;
+				margin-right: 0px;
+				padding: 0px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+			.outlet_specials{
+				height: 50px;
+				width: 310px;
+			}
+			.outlet_specials p{
+				margin: 0px;
+				padding: 6px 0px 0px 0px;
+				color: #414449;
+				font-size: 15px;
+				font-weight: 100;
+			}
+			.outlet_item:hover{
+				transform: scale(0.95,0.95);
+			}
+			
+			
+			
+			
+			
+			
+			#popular_resturant_area{
+				width: 100%;
+				height: 700px;
+				float: left;
+				
+			}
+			#resturant_head{
+				float: left;
+				height: 72px;
+				width: 1000px;
+			}
+			#resturant_title{
+				height: 72px;
+				width: 700px;
+				float: left;
+			}
+			#viewmore_resturant{
+				/*height: 34px;
+				width:200px;*/
+				height:44px;
+				width:300px;
+				float: left;
+				padding-top: 28px;
+			}
+			#viewmore_resturant a{
+				margin-left: 150px;
+				padding: 10px 20px;
+				border-radius: 10px;
+				text-decoration: none;
+				background:#fffaae;
+				color:#f36a1d;
+				font-size: 12px;
+				word-spacing: 3px;
+				letter-spacing: 2px;
+				font-weight: 600;
+				font-family: verdana;
+				text-transform: uppercase;
+				transition-duration: 0.3s;
+				transition-timing-function: ease-in-out;
+			}
+			#viewmore_resturant a:hover{
+				color: #fffaae;
+				background:#f36a1d;
+			}
+			#filter_resturant_link{
+				width: 1000px;
+				height: 50px;
+				float : left;
+			}
+			.filter_buttons{
+				height:40px;
+				width: auto;
+				float: left;
+				margin: 5px 5px;
+			}
+			.filter_buttons a{
+				float:left;
+				text-decoration: none;
+				padding: 5px 7px;
+				margin-top: 5px; 
+				border: solid 1px #5e5e5e;
+				border-radius: 25px;
+				color: #686868;
+			}
+			#restaurant_list{
+				width: 100%;
+				height:580px;
+				float: left;
+				/*  220*260  */
+			}
+			.restaurant_container{
+				width: 220px;
+				height: 260px;
+				float: left;
+				margin: 15px;
+			}
+			.restaurant_container a{
+				text-decoration: none;
+			}
+			.restaurant_item{
+				width: 210px;
+				height: 250px;
+				margin:auto;
+				transition: transform 0.1s ease-in-out;
+			}
+			.restaurant_image{
+				width: 210px;
+				height: 160px;
+				
+				border-radius: 20px;
+			}
+			#res1{
+				background: url('assets/Restaurant/res1.avif');
+			}
+			#res2{
+				background: url('assets/Restaurant/res2.avif');
+			}
+			#res3{
+				background: url('assets/Restaurant/res3.avif');
+			}
+			#res4{
+				background: url('assets/Restaurant/res4.avif');
+			}
+			#res5{
+				background: url('assets/Restaurant/res5.avif');
+			}
+			#res6{
+				background: url('assets/Restaurant/res6.avif');
+			}
+			#res7{
+				background: url('assets/Restaurant/res7.avif');
+			}
+			#res8{
+				background: url('assets/Restaurant/res8.avif');
+			}
+			#res1,#res2,#res3,#res4,#res5,#res6,#res7,#res8{
+				overflow: hidden;
+				background-size: 120%;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			.restaurantImg_vaccant_space{
+				height:75px;
+				width: 210px;
+			}
+			.resturant_offer{
+				height: 80px;
+				width: 210px;
+				background-image: linear-gradient(to top, black 0%, black 35%,transparent 100%);
+			}
+			.resturant_offer p{
+				padding-left:10px;
+				padding-top: 40px;
+				font-weight: bolder;
+				color: #FFF;
+				font-size: 18px;
+				font-family: helvetica;
+			}
+			.restaurant_name{
+				height: 25px;
+				width: 210px;
+			}
+			.restaurant_name p{
+				margin: 0px;
+				padding: 4px 0px 0px 0px;
+				color: #292b2d;
+				font-weight: 700;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				
+			}
+			.restaurant_rating{
+				height: 25px;
+				width: 210px;
+			}
+			.restaurant_rating p{
+				color: #292b2d;
+				margin: 0px;
+				font-size: 16px;
+				margin-top: -18px;
+				margin-bottom: 0px;
+				margin-left: 25px;
+				margin-right: 0px;
+				padding: 0px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				padding-left: 0px;
+				padding-right: 0px;
+				font-weight: 600;
+			}
+			.restaurant_rating svg{
+				width: 20px;
+				height: 20px;
+				margin: 0px;
+				margin-top: 2.5px;
+				margin-bottom: 0px;
+				margin-left: 0px;
+				margin-right: 0px;
+				padding: 0px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+			.restaurant_specials{
+				height: 50px;
+				width: 210px;
+			}
+			.restaurant_specials p{
+				margin: 0px;
+				padding: 6px 0px 0px 0px;
+				color: #414449;
+				font-weight: 100;
+				font-size: 14px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			.restaurant_item:hover{
+				transform: scale(0.95,0.95);
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			#description_box{
+				width: 1200px;
+				height: auto;
+				float: left;
+				border-top: solid 1px #e2e2e7;
+			}
+			#description{
+				width: 1000px;
+				height: 640px;
+				float: left;
+				margin: 60px 80px;
+				padding: 40px 20px;
+				border: solid 2px #e2e2e7;
+				border-radius: 30px;
+				/*overflow-y: scroll;*/
+			}
+			/*#description p{
+				white-space: nowrap;
+  				overflow: hidden;
+  				text-overflow: ellipsis;
+			}*/
+			#description h2,#description p,#description h3, #description ol li{
+				color: #676a6d;
+			
+			}
+			
+			#cuisine_head{
+				width: 1200px;
+				height: 72px;
+				float: left;
+			}
+			#cuisine_title{
+				width: 1200px;
+				height: 72px;
+				float: left;
+			}
+			#Cusine_lists{
+				width: 100%;
+				height: auto;
+				float: left;
+			}
+			.cusine_labels{
+				width: 265px;
+				height: 55px;
+				float: left;
+				margin: 0.6% 1.4%;
+			}
+			.cusine_labels a{
+				white-space: nowrap;
+				overflow:hidden;
+				text-overflow: ellipsis;
+				text-decoration: none;
+				color: #686868;
+				width: 263px;
+				height: 35px;
+				padding-top: 18px;
+				text-align: center;
+				border: solid 1px #e2e2e7;
+				border-radius: 10px;
+				float: left;
+			}
+			
+			
+			#Restaurants_chain_head{
+				width: 1200px;
+				height: 72px;
+				float: left;
+			}
+			#restaurants_chain_title{
+				width: 1200px;
+				height: 72px;
+				float: left;
+			}
+			#restaurant_chain_lists{
+				width: 100%;
+				height: auto;
+				float: left;
+			}
+			.restaurant_chain_label{
+				width: 265px;
+				height: 55px;
+				float: left;
+				margin: 0.6% 1.4%;
+			}
+			.restaurant_chain_label a{
+				white-space: nowrap;
+				overflow:hidden;
+				text-overflow: ellipsis;
+				text-decoration: none;
+				color: #686868;
+				width: 263px;
+				height: 35px;
+				padding-top: 18px;
+				text-align: center;
+				border: solid 1px #e2e2e7;
+				border-radius: 10px;
+				float: left;
+			}
+			#promotionarea{
+				width: 100%;
+				height: 100px;
+				float: left;
+				background: #f0f0f5;
+			}
+			#app_promotion_area{
+				width: 100%;
+				height: 100px;
+				float: left;
+			}
+			#promotion_text{
+				width: 500px;
+				height: 100%;
+				float: left;
+				/*padding-left: 10px;*/
+				margin-left: 100px;
+			}
+			#promotion_text h2{
+				padding-left: 10px;
+			}
+			#app_promotion_link{
+				width: 500px;
+				height: 100%;
+				float: left;
+			}
+			#promotion_link{
+				width: 370px;
+				height:58px;
+				float: left;
+				margin: 21px 70px;
+			}
+			#promotion_link a{
+				width: 180px;
+				height: 58px;
+				text-decoration: none;
+				float: left;
+			}
+			#promotion_link a:last-child{
+				margin-left: 5px;
+			}
+			#promotion_link img{
+				width: 180px;
+				height: 58px;
+			}
+			
+			
+			
+			#footerarea{
+				width: 100%;
+				height: 450px;
+				float:left;
+				background: #000;
+			}
+			#footer_grids{
+				width: 100%;
+				height: 450px;
+				float:left;
+				
+			}
+			
+			.f_grid{
+				width: 245px;
+				height: 400px;
+				float: left;
+				margin: 35px 25px;
+			}
+			.f_grid img{
+				width: 120px;
+				height: 35px;
+				margin: 10px;
+			}
+			.f_grid p{
+				color: #819b9e;
+			}
+			.f_grid h3{
+				color: #FFF;
+				
+			}
+			.f_grid ul{
+				list-style: none;
+				margin: 0px;
+				padding: 0px;
+				color: #819b9e;
+			}
+			.f_grid ul li{
+				padding-bottom: 15px;
+			}
+			.f_grid ul li a{
+				text-decoration: none;
+				color: #819b9e;
+			}
+			#footer_grid_3A{
+				width: 100%;
+				height: 200px;
+				float: left;
+				
+			}
+			#footer_grid_3B{
+				width: 100%;
+				height: 200px;
+				float: left;
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			

@@ -1,0 +1,574 @@
+<html>
+	<head>
+		<title>
+			Swiggy
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<style type="text/css">
+			body{
+				margin: 0px;
+				font-family: arial;
+			}
+			#mainarea{
+				width: 100%;
+				height:100%;
+				background: #fff;
+				float: left;
+			}
+			.inner{
+				width: 1200px;
+				height: 100%;
+				margin: 0px auto;
+				background: grey;
+			}
+			#toparea{
+				width: 100%;
+				height: 78px;
+				background: #fff;
+				border-bottom: solid 2px #e2e2e7;
+				float: left;
+			}
+			#logo{
+				width: 150px;
+				height: 78px;
+				float: left;
+			}
+			#logo img{
+				width: 135px;
+				height: 50px;
+				margin: 19px 10px; 
+				padding-right: 12px;
+				border-right: solid 1px #e2e2e7;
+			}
+			#location_logo{
+				width: 40px;
+				height: 78px;
+				float: left;
+			}
+			#location_logo img{
+				width: 25px;
+				height: 25px;
+				margin: 30px 0px 0px 11px;
+			}
+			#search_location{
+				width: 400px;
+				height: 78px;
+				/* background: red; */
+				float:left;
+			}
+			#search_location p{
+				width: 350px;
+				height: 50px;
+				font-size: 17px;
+				font-weight: 550;
+				/*text-decoration: capitalize;*/
+				color: #414449;
+				margin: 35px 25px 28px 0px;
+			}
+			#to_search{
+				width: 400px;
+				height: 78px;
+				float: left;
+				/* background: yellow; */
+
+			}
+			#to_search input{
+				height: 60px;
+				width: 380px;
+				margin: 9px 0 0 0;
+				padding-left: 10px;
+				background: #f0f0f5;
+				border: none;
+				border-radius: 10px;
+			}
+			#top_profile{
+				width: 200px;
+				height: 78px;
+				float: left;
+			}
+			#top_profile img{
+				width: 60px;
+				height: 60px;
+				margin: 9px 0 0 60px;
+			}
+			#frontarea{
+				width: 100%;
+				height: 315px;
+				float: left;
+				background: linear-gradient(to top, #cabdf4, #FFF);
+				border-radius: 0 0 25px 25px;
+			}
+			#front_text{
+				height: 315px;
+				width: 50%;
+				float: left;
+				
+			}
+			#front_text p{
+				font-family: verdana;
+				font-weight: 600;
+				font-size:40px;
+				color: #3d3f48;
+				margin: 110px 0 0 20px;
+			}
+			#front_image{
+				height: 315px;
+				width: 50%;
+				float: left;
+			}
+			#front_image img{
+				width: 460px;
+				height: 260px;
+    				margin: 60px 0px 0px 150px;
+			}
+			#food_resturant_area{
+				width: 1000px;
+				height: auto;
+				background: red;
+				float:left;
+				margin: 0 8.33%;
+			}
+			#category_area{
+				width: 1000px;
+				height: 305px;
+				background: yellow;
+				float:left;
+				border-bottom: solid 1px #e2e2e7;
+			}
+			#category_head{
+				float: left;
+				height: 72px;
+				width: 1000px;
+			}
+			#category_title{
+				height: 72px;
+				width: 700px;
+				background: #d66552;
+				float: left;
+			}
+			#viewmore_category{
+				/*height: 34px;
+				width:200px;*/
+				height:44px;
+				width:300px;
+				background: #b48266;
+				float: left;
+				padding-top: 28px;
+			}
+			#viewmore_category a{
+				margin-left: 150px;
+				padding: 10px 20px;
+				border-radius: 10px;
+				text-decoration: none;
+				background:#eee9fc;
+				color:#3d3f48;
+				font-size: 12px;
+				word-spacing: 3px;
+				letter-spacing: 2px;
+				font-weight: 600;
+				font-family: verdana;
+				text-transform: uppercase;
+			}
+			#viewmore_category a:hover{
+				color: #fbfafe;
+				background:#cdc1f5;
+			}
+			#category_items{
+				width: 1000px;
+				height: 233px;
+				/*padding-bottom:30px;*/
+				float:left;
+			}
+			.item_container{
+				width: 150px;
+				height:190px;
+				margin:20px 8px 20px 8px;
+				float: left;
+				background: green;
+				overflow: hidden;
+			}
+			.item_container img{
+				width: 130px;
+				height: 160px;
+				/*width: 100%;
+				height: 100%;*/
+				margin: 5px 11px;
+				transition: transform 0.3s ease-in-out; 
+			}
+			.item_container img:hover{
+				transform: scale(1.05, 1.05);
+			}
+			#best_outlet_area{
+				width: 1000px;
+				height: 650px;
+				background: yellow;
+				float:left;
+				border-bottom: solid 1px #e2e2e7;
+			}
+			#outlet_head{
+				float: left;
+				height: 72px;
+				width: 1000px;
+			}
+			#outlet_title{
+				height: 72px;
+				width: 700px;
+				background: #d66552;
+				float: left;
+			}
+			#viewmore_outlet{
+				/*height: 34px;
+				width:200px;*/
+				height:44px;
+				width:300px;
+				background: #b48266;
+				float: left;
+				padding-top: 28px;
+			}
+			#viewmore_outlet a{
+				margin-left: 150px;
+				padding: 10px 20px;
+				border-radius: 10px;
+				text-decoration: none;
+				background:#eee9fc;
+				color:#3d3f48;
+				font-size: 12px;
+				word-spacing: 3px;
+				letter-spacing: 2px;
+				font-weight: 600;
+				font-family: verdana;
+				text-transform: uppercase;
+			}
+			#viewmore_outlet a:hover{
+				color: #fbfafe;
+				background:#cdc1f5;
+			}
+			.outlet_container{
+				width: 320px;
+				height: 320px;
+				float: left;
+				margin: auto;
+				background: green;
+			}
+			.outlet_item{
+				width: 310px;
+				height: 310px;
+				background: grey;
+				margin:auto;
+				transition: transform 0.2s ease-in;
+			}
+			.outlet_image{
+				width: 310px;
+				height: 210px;
+				overflow: hidden;
+				background: url('assets/Outlets/Ram Babu Restaurant.avif');
+				background-size: 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+				border-radius: 20px;
+			}
+			.outletImg_vaccant_space{
+				height:130px;
+				width: 310px;
+			}
+			#outlet_1{
+				height: 80px;
+				width: 310px;
+				background-image: linear-gradient(to top, black 0%, black 35%,transparent 100%);
+			}
+			#outlet_1 p{
+				padding-left:14px;
+				padding-top: 30px;
+				font-weight: bolder;
+				color: #FFF;
+				font-size: 20px;
+				font-family: helvetica;
+			}
+			.outlet_name{
+				height: 25px;
+				width: 310px;
+				background: aqua;
+			}
+			.outlet_name p{
+				margin: 0px;
+				padding: 0px;
+				color: #292b2d;
+				font-weight: 700;
+				
+			}
+			.outlet_rating{
+				height: 25px;
+				width: 310px;
+				background: pink;
+			}
+			.outlet_rating p{
+				color: #292b2d;
+				margin: 0px;
+				margin-top: -18px;
+				margin-bottom: 0px;
+				margin-left: 25px;
+				margin-right: 0px;
+				padding: 0px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				padding-left: 0px;
+				padding-right: 0px;
+				font-weight: 600;
+			}
+			.outlet_rating svg{
+				width: 20px;
+				height: 20px;
+				margin: 0px;
+				margin-top: 2.5px;
+				margin-bottom: 0px;
+				margin-left: 0px;
+				margin-right: 0px;
+				padding: 0px;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+			.outlet_specials{
+				height: 50px;
+				width: 310px;
+				background: magenta;
+			}
+			.outlet_specials p{
+				margin: 0px;
+				padding: 6px 0px 0px 0px;
+				color: #414449;
+				font-weight: 100;
+			}
+			.outlet_item:hover{
+				transform: scale(0.95,0.95);
+			}
+			
+			
+			
+			
+			
+			
+			#popular_resturant_area{
+				width: 100%;
+				height: 500px;
+				background: green;
+				float: left;
+				border-bottom: solid 1px #e2e2e7;
+				
+			}
+			#resturant_head{
+				float: left;
+				height: 72px;
+				width: 1000px;
+			}
+			#resturant_title{
+				height: 72px;
+				width: 700px;
+				background: #d66552;
+				float: left;
+			}
+			#viewmore_resturant{
+				/*height: 34px;
+				width:200px;*/
+				height:44px;
+				width:300px;
+				background: #b48266;
+				float: left;
+				padding-top: 28px;
+			}
+			#viewmore_resturant a{
+				margin-left: 150px;
+				padding: 10px 20px;
+				border-radius: 10px;
+				text-decoration: none;
+				background:#eee9fc;
+				color:#3d3f48;
+				font-size: 12px;
+				word-spacing: 3px;
+				letter-spacing: 2px;
+				font-weight: 600;
+				font-family: verdana;
+				text-transform: uppercase;
+			}
+			#viewmore_resturant a:hover{
+				color: #fbfafe;
+				background:#cdc1f5;
+			}
+			#filter_resturant_link{
+				width: 1000px;
+				height: 50px;
+				float : left;
+				background: yellow;
+			}
+			
+			
+			
+			#description_area{
+				width: 1200px;
+				height: auto;
+				background: #fde8bd;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="toparea">
+				<div class="inner">
+					<div id="logo">
+						<img src="assets/swiggy-logo.svg">
+					</div>
+					<div id="location_logo">
+						<img src="assets/location.png">
+					</div>
+					<div id="search_location">
+						<p><i class="fa-location-arrow"></i>Jamshedpur-831013,JH </p>
+					</div>
+					<div id="to_search">
+						<input type="text" name="search_food_item" id="input_food_name" placeholder="Search for resturant and food">
+					</div>
+					<div id="top_profile">
+						<img src="assets/profile_logo.png">
+					</div>
+				</div>
+			</div>
+			<div id="frontarea">
+				<div class="inner">
+					<div id="front_text">
+						<p>Resturants Near <br/>Me</p>	
+					</div>
+					<div id="front_image">
+						<img src="assets/front.webp">
+					</div>
+				</div>
+			</div>
+			<div id="itemarea">
+				<div class="inner">
+					<div id="food_resturant_area">
+						<div id="category_area">
+							<div id="category_head">
+								<div id="category_title">
+									<h2>Devanshu, what's on your mind?</h2>
+								</div>
+								<div id="viewmore_category">
+									<a href="#">View More</a>
+								</div>
+							</div>
+							<div id="category_items">
+								<div class="item_container">
+									<a href="#">
+										<img src="assets/Category/Pizza.webp">
+									</a>
+								</div>
+								<div class="item_container">
+									<a href="#">
+										<img src="assets/Category/Biryani_2.webp">
+									</a>
+								</div>
+								<div class="item_container">
+									<a href="#">
+										<img src="assets/Category/Burger.webp">
+									</a>
+								</div>
+								<div class="item_container">
+									<a href="#">
+										<img src="assets/Category/Rolls.webp">
+									</a>
+								</div>
+								<div class="item_container">
+									<a href="#">
+										<img src="assets/Category/Chinese.webp">
+									</a>
+								</div>
+								<div class="item_container">
+									<a href="#">
+										<img src="assets/Category/Cakes.webp">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div id="best_outlet_area">
+							<div id="outlet_head">
+								<div id="outlet_title">
+									<h2>Best Food Outlets Near Me</h2>
+								</div>
+								<div id="viewmore_outlet">
+									<a href="#">View More</a>
+								</div>
+							</div>
+							<div class="outlet_container">
+								<div class="outlet_item">
+									<div class="outlet_image">
+										<div class="outletImg_vaccant_space"></div>
+										<div id="outlet_1">
+											<p>₹175 OFF ABOVE ₹399</p>
+										</div>
+									</div>
+									<div class="outlet_name">
+										<p>Ram Babu Restaurant</p>
+									</div>
+									<div class="outlet_rating">
+										<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 24 24">
+										  <!-- Green Circle -->
+										    <circle cx="12" cy="12" r="10" fill="#178b3e" />
+											
+											  <!-- White Solid Star -->
+											    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="#FFFFFF" />
+												</svg><p>3.5 • 50 mins</p>
+									</div>
+									<div class="outlet_specials">
+										<p>Chinese, North Indian, Biryani<br>Kankarbagh</p>
+									</div>
+								</div>
+								<div class="outlet_container">
+									<div class="outlet_item">
+										
+									</div>
+									
+								</div>
+								<div class="outlet_container">
+									<div class="outlet_item">
+										
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div id="popular_resturant_area">
+							<div id="resturant_head">
+								<div id="resturant_title">
+									<h2>Popular restaurants near me</h2>
+								</div>
+								<div id="viewmore_resturant">
+									<a href="#">View More</a>
+								</div>
+							</div>
+							<div id="filter_resturant_link">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="description_area">
+				<div class="inner">
+					
+					
+				</div>
+			</div>
+			<div id="promotionarea">
+				<div class="inner">
+					
+					
+				</div>
+			</div>
+			<div id="footerarea">
+				<div class="inner">
+					
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

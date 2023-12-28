@@ -1,0 +1,121 @@
+body{
+			
+				margin: 0px;
+				font-family: arial;
+			}
+			#to_top{
+				height: 50px;
+				width: 50px;
+				border: solid 1px transparent;
+				border-radius: 50%;
+				background: #ff8710;
+				position: fixed;
+				bottom: 10px;
+				right: 10px;
+			}
+			#to_top:hover{
+				background: #e74c3c;
+			}
+			#mainarea{
+				width: 100%;
+				height:100%;
+				background: #fff;
+				float: left;
+			}
+			.inner{
+				width: 1200px;
+				height: 100%;
+				margin: 0px auto;				
+				background: gray;
+
+			}
+			#toparea{
+				width: 100%;
+				height: 90px;
+				background: #fff;
+				float: left;
+				position: sticky;
+				top: 0;
+				z-index: 1000;
+			}
+			#logo{
+				width: 250px;
+				height: 90px;
+				float: left;
+				background: blue;
+				
+			}
+			#logo img{
+				width: 135px;
+				height: 50px;
+				margin: 17px 56px; 
+			}
+			#menu_links{
+				width: 700px;
+				height: 90px;
+				float: left;
+				background: yellow;
+			}
+			.links{
+				width: auto;
+				height: 40px;
+				border: solid 1px #ff8710;
+				float: left;
+				margin: 25px 2px; 
+			}
+			.links a{
+				text-decoration: none;
+				color: #000;
+				float: left;
+				padding: 10px;
+				text-align: center;
+			}
+			.links:first-child{
+				margin-left: 25px;
+			}
+			
+			#social_links{
+				width: 250px;
+				height: 90px;
+				float: left;
+				background: pink;
+			}
+			#social_links a img{
+				width: 25px;
+				height: 25px;
+				margin: 30px 5px;
+			}
+			#social_links a:first-child{
+				margin-left: 30px;
+			}
+			#front_area{
+				height: 400px;
+				width: 100%;
+				float: left;
+				background: url('assets/Careers/banner3.jpg');
+				background-repeat: no-repeat;
+				background-size: 100%;
+				background-position: 0 -70px;
+			}
+			#front_box{
+				width: 100%;
+				height: 400px;
+				background: red;
+				float: left;
+			}
+			#front_area_container{
+				width: 900px;
+				height: 325px;
+				float: left;
+				background: pink;
+			}
+			
+			#front-text{
+				width: 400px;
+				height: 160px;
+				float: left;
+				background: blue;
+			}
+			
+			
+			
