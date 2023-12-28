@@ -1,4 +1,53 @@
 .toparea{
-    padding: 20px 0;
-    background: #FFF;
+    padding: 10px 0;
+    background: rgb(255, 255, 255);
+}
+#logo{
+    width: 85%;
+    margin-top: 10px;
+    padding-right: 10px;
+    margin-top: 12px;
+    border-right: solid 1px #e2e2e7;
+}
+#profile{
+    width: 70%;
+    margin-top: 5px;
+}
+.toparea p{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.toparea input{
+    width: 100%;
+    height: 90%;
+    margin: 3px 0;
+    background: #F0F0F5;
+    padding: 15px;
+    border: solid 1px transparent;
+    border-radius: 10px;
+}
+
+.frontarea{
+    width: 100%;
+    padding: 10px 0;
+    border-top: solid 2px #e2e2e7;
+    background: linear-gradient(to top, #cabdf4, #FFF);
+    border-radius: 0 0 25px 25px;
+}
+#fronttext{
+    font-family: Arial;
+	font-weight: 900;
+	/* font-size:40px; */
+	color: #3d3f48;
+    margin: 100px 0;
+}
+#frontimage{
+    width: 100%;
+}
+.food-resturant-area{
+    
 }

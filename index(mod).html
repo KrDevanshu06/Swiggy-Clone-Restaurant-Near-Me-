@@ -1,71 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style(mod).css">
+    <link rel="stylesheet" type="text/css" href="style(mod).css">
     <title>Resturants Near Me</title>
 </head>
+
 <body>
-    <header>
+    <header class="toparea">
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <img src="assets/swiggy-logo.svg" alt="Swiggy.com">
+                    <img src="assets/swiggy-logo.svg" alt="Swiggy.com" id="logo">
                 </div>
                 <div class="col-4">
-                    <p>Setup your precise location</p>
+                    <p> 
+                        <img src="assets/nearme.png" alt="nearby location"> 
+                        Setup your precise location
+                    </p>
                 </div>
                 <div class="col-5">
                     <input type="text" placeholder="Search for restaurant and food">
                 </div>
                 <div class="col-1">
-                    <img src="assets/profile_logo.png" alt="YourID">
+                    <img src="assets/profile_logo.png" alt="YourID" id="profile">
                 </div>
             </div>
         </div>
     </header>
-    <section>
+    <section class="frontarea">
         <div class="container">
             <div class="row">
                 <div class="col-6">
-
+                    <h1 id="fronttext">Restaurants Near <br> Me</h1>
                 </div>
                 <div class="col-6">
+                    <img src="assets/front.webp" id="frontimage">
 
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section class="food-resturant-area">
         <div class="container">
             <div class="row">
+                <div class="col-1">
+
+                </div>
                 <div class="col-10">
-
+                    <div class="row" class="F-R-title">
+                        <div class="col-10">
+                            <h2>Devanshu, what's on your mind?</h2>
+                        </div>
+                        <div class="col-2">
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <a href="#">
+								<img src="assets/Category/Pizza.webp">
+							</a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#">
+								<img src="assets/Category/Biryani_2.webp">
+							</a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#">
+								<img src="assets/Category/Burger.webp">
+							</a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#">
+								<img src="assets/Category/Rolls.webp">
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#">
+								<img src="assets/Category/Chinese.webp">
+							</a>
+                        </div>
+                        <div class="col-2">
+                            <a href="#">
+								<img src="assets/Category/Cakes.webp">
+							</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-2">
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-2">
-
-                </div>
-                <div class="col-2">
-
-                </div>
-                <div class="col-2">
-
-                </div>
-                <div class="col-2">
-
-                </div>
-                <div class="col-2">
-
-                </div>
-                <div class="col-2">
+                <div class="col-1">
 
                 </div>
             </div>
@@ -183,7 +211,7 @@
 
                 </div>
                 <div class="col-3">
-                    
+
                 </div>
             </div>
         </div>
@@ -213,7 +241,7 @@
 
                 </div>
                 <div class="col-3">
-                        
+
                 </div>
             </div>
         </div>
@@ -227,4 +255,5 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
